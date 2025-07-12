@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis AI ChatBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="theme-toggle">
+  <button id="themeBtn">🌓Theme</button>
+</div>
+
+  <div class="chat-container">
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- ✅ Wrap input and button inside a form for proper JS event -->
+    <form id="chat-form" class="input-group">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+      <button type="submit" id="sendBtn">Send</button>
+      <button type="button" id="clearBtn">Clear</button>
+      <button type="button" id="micBtn">🎙️</button>
+      <button type="button" id="downloadBtn">📄 Export</button>
+    </form>
+  </div>
+
+  <!-- ✅ This ensures Flask finds the correct JS file -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
+
