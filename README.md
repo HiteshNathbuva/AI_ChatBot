@@ -2,6 +2,7 @@
 
 An intelligent  AI_ChatBot built with Python Flask, HTML/CSS/JS, and powered by Groq's LLaMA 3 API.  
 It features a sleek UI, light/dark theme toggle, typing animations, and more.
+🚀 Live Demo: Click here to view (https://ai-chatbot-rkmv.onrender.com)
 ---
 ## 🌟 Features
 
