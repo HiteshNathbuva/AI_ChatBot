@@ -34,7 +34,7 @@ def chat():
 
     try:
         response = openai.ChatCompletion.create(
-            model="llama3-8b-8192",
+            model="gemma2-9b-it",
             messages=messages
         )
         reply = response["choices"][0]["message"]["content"]
@@ -45,6 +45,7 @@ def chat():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
